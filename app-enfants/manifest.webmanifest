@@ -1,0 +1,20 @@
+{
+  "name": "Le Jardin du Tawhid",
+  "short_name": "Jardin Tawhid",
+  "description": "Apprendre le Tawhid aux enfants d'après Al-Qawl Al-Mufîd fî Adillat At-Tawhîd",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f7f2e7",
+  "theme_color": "#0f4c45",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%230f4c45'/%3E%3Cg fill='%23c9a227'%3E%3Cpath d='M256 96 291 173 368 208 291 243 256 320 221 243 144 208 221 173Z'/%3E%3C/g%3E%3Cpath d='M250 320h12v128h-12z' fill='%237a5a34'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

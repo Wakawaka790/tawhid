@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le Jardin du Tawhid — apprendre le Tawhid en s'amusant</title>
+<meta name="description" content="Application interactive pour apprendre le Tawhid aux enfants, d'après le livre Al-Qawl Al-Mufîd fî Adillat At-Tawhîd.">
+<meta name="theme-color" content="#0f4c45">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="geo" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true">❦</span>
+    <div>
+      <h1>Le Jardin du Tawhid</h1>
+      <p class="brand-sub">76 leçons · d'après <em>Al-Qawl Al-Mufîd fî Adillat At-Tawhîd</em></p>
+    </div>
+  </div>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-view="jardin" role="tab"><span aria-hidden="true">🌳</span> Jardin</button>
+    <button class="tab" data-view="cles" role="tab"><span aria-hidden="true">🔑</span> Les 8 clés</button>
+    <button class="tab" data-view="detective" role="tab"><span aria-hidden="true">⌕</span> Détective</button>
+    <button class="tab" data-view="compagnon" role="tab"><span aria-hidden="true">✦</span> Compagnon</button>
+  </nav>
+
+  <div class="tools">
+    <button id="btn-voice" class="chip" title="Lire les textes à voix haute" aria-pressed="false">🔊 Voix</button>
+    <button id="btn-petits" class="chip" title="Grand texte et lecture automatique" aria-pressed="false">A+</button>
+  </div>
+</header>
+
+<main>
+  <!-- ══════════════ JARDIN ══════════════ -->
+  <section class="view active" id="view-jardin">
+    <div class="hero">
+      <div class="hero-tree">
+        <svg viewBox="0 0 320 240" id="arbre" aria-hidden="true"></svg>
+      </div>
+      <div class="hero-text">
+        <h2>Mon arbre du Tawhid</h2>
+        <p class="stat-line">
+          <strong id="st-appris">0</strong> leçons apprises ·
+          <strong id="st-reviser">0</strong> à réviser ·
+          <strong id="st-reste">76</strong> à découvrir
+        </p>
+        <div class="bar"><div class="bar-fill" id="st-bar"></div></div>
+        <p class="hero-note">Une feuille jaune, c'est une leçon à réviser. Une feuille verte, c'est une leçon maîtrisée.</p>
+        <button class="btn primary" id="btn-revision">Réviser maintenant <span id="rev-count"></span></button>
+      </div>
+    </div>
+
+    <div id="branches" class="branches"></div>
+
+    <details class="parents">
+      <summary>Espace parents</summary>
+      <div class="parents-body">
+        <ul id="parents-stats"></ul>
+        <p class="note">
+          <strong>Fonctionnement.</strong> Chaque leçon validée entre dans un cycle de révision espacée
+          (J+1, J+3, J+7, puis J+21) : c'est ce qui transforme une lecture en souvenir durable.
+          Les données restent <strong>uniquement dans ce navigateur</strong> — aucune inscription,
+          aucun envoi de données, aucune publicité.
+        </p>
+        <p class="note">
+          <strong>Sources.</strong> Toutes les leçons sont tirées du livre
+          <em>Leçons de Tawhid — Al-Qawl Al-Mufîd fî Adillat At-Tawhîd</em> de Shaykh Muhammad Ibn
+          `Abd Al-Wahhâb Al-Wusâbî, avec le numéro de page indiqué pour vérification.
+          Les questions sensibles (leçons 11, 26, 34, 46, 51, 68-72) sont réservées aux plus grands.
+        </p>
+        <button class="btn small danger" id="btn-reset">Réinitialiser la progression</button>
+      </div>
+    </details>
+  </section>
+
+  <!-- ══════════════ LES 8 CLÉS ══════════════ -->
+  <section class="view" id="view-cles">
+    <h2 class="view-title">Les 8 clés de la forteresse</h2>
+    <p class="view-sub" id="cles-intro"></p>
+    <div class="cles-door" id="cles-door">
+      <div class="door" aria-hidden="true">❖</div>
+      <p id="door-msg">Forger les 8 clés pour ouvrir la porte.</p>
+    </div>
+    <div class="cles" id="cles"></div>
+  </section>
+
+  <!-- ══════════════ DÉTECTIVE ══════════════ -->
+  <section class="view" id="view-detective">
+    <h2 class="view-title">Détective du Tawhid</h2>
+    <p class="view-sub" id="det-intro"></p>
+    <div class="scenes" id="scenes"></div>
+    <div id="scene-jeu"></div>
+  </section>
+
+  <!-- ══════════════ COMPAGNON ══════════════ -->
+  <section class="view" id="view-compagnon">
+    <h2 class="view-title">Le compagnon de science</h2>
+    <p class="view-sub" id="comp-avert"></p>
+    <div class="search-row">
+      <input id="q" type="search" placeholder="Pose ta question…" autocomplete="off">
+      <button class="btn primary" id="btn-ask">Demander</button>
+    </div>
+    <div class="chips" id="q-chips"></div>
+    <div id="reponse"></div>
+  </section>
+</main>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modal-close" aria-label="Fermer">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>

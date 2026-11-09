@@ -1,0 +1,78 @@
+{
+  "titre": "Les 8 clés de la forteresse du Tawhid",
+  "consigne": "Chaque clé correspond à une condition de « Lâ ilâha illa Allâh » (leçon 2, p. 14). Forge les 8 clés pour ouvrir la porte.",
+  "cles": [
+    {
+      "id": 1,
+      "nom": "La science",
+      "rappel": "Connaître le sens de l'attestation : négation et affirmation. Cela exclut l'ignorance.",
+      "q": "Qui est concerné par l'ignorance du sens de « Lâ ilâha illa Allâh » ?",
+      "o": ["Celui qui prononce la phrase sans savoir ce qu'elle veut dire", "Celui qui la dit doucement", "Celui qui la dit debout"],
+      "r": 0,
+      "ex": "Allah dit : « Sache donc qu'en vérité, il n'y a de divinité digne d'adoration qu'Allah. » (Muhammad, 19) — Il a commencé par la science."
+    },
+    {
+      "id": 2,
+      "nom": "La certitude",
+      "rappel": "Être totalement convaincu, sans le moindre doute. Le doute rend l'attestation inutile.",
+      "q": "Celui qui prononce l'attestation mais doute dans son cœur…",
+      "o": ["Sa foi est complète", "Son attestation ne lui est pas utile : la certitude est une condition", "Cela ne compte pas, seule la langue compte"],
+      "r": 1,
+      "ex": "« Les vrais croyants sont seulement ceux qui croient en Allah et en Son messager, qui par la suite ne doutent point. » (Al-Hujurât, 15)"
+    },
+    {
+      "id": 3,
+      "nom": "L'acceptation",
+      "rappel": "Accepter tout ce que l'attestation implique, avec le cœur et la langue. Cela exclut le rejet.",
+      "q": "Que fait-on de ce que l'attestation implique ?",
+      "o": ["On l'accepte avec le cœur et la langue", "On peut en rejeter une partie", "On choisit ce qui nous plaît"],
+      "r": 0,
+      "ex": "« Quand on leur disait : Point de divinité digne d'adoration qu'Allah, ils s'enflaient d'orgueil. » (As-Sâffât, 35)"
+    },
+    {
+      "id": 4,
+      "nom": "La soumission",
+      "rappel": "Se soumettre à ce qu'elle indique par les actes. Cela exclut le délaissement.",
+      "q": "La soumission, c'est…",
+      "o": ["Dire la phrase seulement", "Obéir à Allah et Lui être soumis dans ses actes", "Connaître beaucoup de hadiths"],
+      "r": 1,
+      "ex": "« Et quiconque soumet son être à Allah, tout en étant bienfaisant, s'accroche certes à l'anse la plus ferme. » (Luqmân, 22)"
+    },
+    {
+      "id": 5,
+      "nom": "La véracité",
+      "rappel": "Prononcer l'attestation en toute vérité, le cœur d'accord avec la langue. Cela exclut le mensonge.",
+      "q": "Celui qui dit l'attestation avec la langue mais dont le cœur la dément…",
+      "o": ["Il est le meilleur des croyants", "Il est hypocrite et menteur", "Il est excusé"],
+      "r": 1,
+      "ex": "Allah a décrit les hypocrites : « Ils disent : nous croyons en Allah et au Jour dernier, tandis qu'en fait ils n'y croient pas. » (Al-Baqara, 8)"
+    },
+    {
+      "id": 6,
+      "nom": "La sincérité",
+      "rappel": "Purifier son adoration de toute association, d'hypocrisie et d'ostentation (Al-Ikhlâs).",
+      "q": "Faire une bonne action pour que les gens la voient, c'est…",
+      "o": ["De la sincérité", "De l'ostentation, qui corrompt l'œuvre", "Sans conséquence"],
+      "r": 1,
+      "ex": "« Adore donc Allah en Lui vouant un culte exclusif. » (Az-Zumar, 2)"
+    },
+    {
+      "id": 7,
+      "nom": "L'amour",
+      "rappel": "Aimer cette parole, ce qu'elle implique, et ceux qui la mettent en pratique.",
+      "q": "Que doit aimer le croyant ?",
+      "o": ["Cette parole, son sens et les gens qui la vivent", "Seulement sa famille", "Rien d'autre que lui-même"],
+      "r": 0,
+      "ex": "« Parmi les hommes, il en est qui prennent, en dehors d'Allah, des égaux à Lui, en les aimant comme on aime Allah. Or les croyants sont les plus ardents en l'amour d'Allah. » (Al-Baqara, 165)"
+    },
+    {
+      "id": 8,
+      "nom": "Le rejet des fausses divinités",
+      "rappel": "Mécroire à tout ce qui est adoré en dehors d'Allah (les Tawâghît), en même temps qu'on croit en Allah.",
+      "q": "Suffit-il de dire « Lâ ilâha illa Allâh » pour être en sécurité ?",
+      "o": ["Oui, la phrase suffit", "Non : il faut aussi rejeter tout ce qui est adoré en dehors d'Allah", "Non, il faut voyager"],
+      "r": 1,
+      "ex": "« Quiconque mécroit aux fausses divinités tandis qu'il croit en Allah saisit l'anse la plus solide. » (Al-Baqara, 256)"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "titre": "Le compagnon de science",
+  "avertissement": "Chaque réponse provient uniquement du livre « Leçons de Tawhid — Al-Qawl Al-Mufîd fî Adillat At-Tawhîd », avec la leçon et la page indiquées. Pour toute question qui n'y figure pas, demande à tes parents ou à une personne de science.",
+  "questions": [
+    {
+      "q": "Où est Allah ?",
+      "mots": ["où", "est", "allah", "dieu", "ciel", "trône", "là-haut"],
+      "a": "Allah est au-dessus des cieux, élevé au-dessus de Son Trône (istawâ), comme Lui-même nous l'a appris dans le Coran et comme Son Prophète ﷺ nous l'a enseigné. Il connaît toute chose et rien ne Lui ressemble.",
+      "ref": "Leçon 7, p. 28"
+    },
+    {
+      "q": "Pourquoi Allah nous a-t-Il créés ?",
+      "mots": ["pourquoi", "créé", "création", "but", "sens", "vivre", "existence"],
+      "a": "Pour L'adorer Lui Seul, sans rien Lui associer. Allah dit : « Je n'ai créé les djinns et les hommes que pour qu'ils M'adorent. » (Adh-Dhâriyât, 56) Le Tawhid est la mission de tous les messagers.",
+      "ref": "Leçon 20, p. 71 et conclusion, p. 234"
+    },
+    {
+      "q": "Qu'est-ce que le Tawhid ?",
+      "mots": ["tawhid", "qu'est-ce", "définition", "unicité", "unifier", "monothéisme"],
+      "a": "C'est unifier Allah : croire qu'Il est Seul dans Son essence, Ses noms, Ses attributs et Ses actes. Le livre le divise en 4 parties : la seigneurie (Ar-Rubûbiyya), l'adoration (Al-Ulûhiyya), les noms et attributs (Al-Asmâ' wa-s-Sifât) et la conformité au Prophète ﷺ (Al-Mutâba`ah).",
+      "ref": "Leçons 20 et 22, p. 71 et 75"
+    },
+    {
+      "q": "Quelles sont les 4 parties du Tawhid ?",
+      "mots": ["parties", "divisions", "quatre", "4", "rububiyya", "uluhiyya", "asma", "mutaba"],
+      "a": "1. Tawhîd Ar-Rubûbiyya : Allah Seul crée et gère tout. 2. Tawhîd Al-Ulûhiyya : toute adoration va à Lui Seul. 3. Tawhîd Al-Asmâ' wa-s-Sifât : on affirme Ses noms et attributs sans déformation ni comparaison. 4. Tawhîd Al-Mutâba`ah : on ne suit que le Prophète ﷺ dans la manière d'adorer.",
+      "ref": "Leçon 22, p. 75"
+    },
+    {
+      "q": "Qu'est-ce que le shirk ?",
+      "mots": ["shirk", "association", "associé", "polythéisme", "idole"],
+      "a": "C'est donner à Allah un associé dans ce qui Lui appartient en propre : l'adoration. Le shirk majeur fait sortir de l'Islam et annule les œuvres ; le shirk mineur ne fait pas sortir de l'Islam mais compte parmi les plus grands péchés — comme l'ostentation (ar-riyâ'). Le livre en cite 15 sortes.",
+      "ref": "Leçons 29, 30 et 31, p. 96 à 107"
+    },
+    {
+      "q": "Allah pardonne-t-Il tout ?",
+      "mots": ["pardon", "pardonne", "péché", "repentir", "miséricorde"],
+      "a": "Allah pardonne tout, sauf le shirk si la personne meurt sans s'en être repentie : « Certes Allah ne pardonne pas qu'on Lui donne des associés. À part cela, Il pardonne à qui Il veut. » (An-Nisâ', 48 et 116).",
+      "ref": "Leçon 29, p. 96"
+    },
+    {
+      "q": "Quels sont les 5 piliers de l'Islam ?",
+      "mots": ["piliers", "islam", "cinq", "5", "prière", "zakât", "ramadan", "pèlerinage"],
+      "a": "L'Islam est bâti sur cinq piliers : l'attestation qu'il n'y a de divinité digne d'adoration qu'Allah et que Muhammad est le Messager d'Allah, accomplir la prière, s'acquitter de l'aumône légale (zakât), accomplir le pèlerinage à la Maison sacrée, et jeûner le mois de Ramadan.",
+      "ref": "Leçon 10, p. 33 (Al-Bukhârî et Muslim)"
+    },
+    {
+      "q": "Quels sont les 6 piliers de la foi ?",
+      "mots": ["piliers", "foi", "imân", "six", "6", "anges", "livres", "messagers", "destin", "jour dernier"],
+      "a": "Croire en Allah, en Ses anges, en Ses Livres, en Ses messagers, au Jour Dernier, et au destin — favorable ou défavorable.",
+      "ref": "Leçon 14, p. 54 (hadith de Jibrîl)"
+    },
+    {
+      "q": "La foi augmente-t-elle et diminue-t-elle ?",
+      "mots": ["foi", "augmente", "diminue", "baisse", "monte", "imân"],
+      "a": "Oui. Elle augmente avec l'obéissance, le rappel d'Allah et les bonnes œuvres, et elle diminue avec les péchés et la négligence. Le Prophète ﷺ a dit que la foi comporte soixante-treize branches.",
+      "ref": "Leçons 15 et 16, p. 55 et 57"
+    },
+    {
+      "q": "Quels sont les trois degrés de la religion ?",
+      "mots": ["degrés", "trois", "3", "islam", "imân", "ihsân", "religion"],
+      "a": "Al-Islâm (la soumission), Al-Îmân (la foi) et Al-Ihsân (l'excellence). Al-Ihsân, c'est adorer Allah comme si tu Le voyais ; et si tu ne Le vois pas, Lui te voit.",
+      "ref": "Leçons 8 et 19, p. 30 et 68"
+    },
+    {
+      "q": "Comment Allah accepte-t-Il nos œuvres ?",
+      "mots": ["accepter", "accepté", "œuvres", "conditions", "sincérité", "ikhlas", "sunna", "conformité"],
+      "a": "À deux conditions : la sincérité (que l'acte soit fait pour Allah Seul) et la conformité (qu'il soit conforme à l'enseignement du Prophète ﷺ). Allah dit : « Quiconque espère rencontrer son Seigneur, qu'il fasse de bonnes actions et qu'il n'associe dans son adoration aucun autre à son Seigneur. » (Al-Kahf, 110)",
+      "ref": "Leçons 59 et 60, p. 192 et 197"
+    },
+    {
+      "q": "Qu'est-ce que la sincérité ?",
+      "mots": ["sincérité", "ikhlas", "intention", "ostentation", "riya", "vu"],
+      "a": "Al-Ikhlâs, c'est purifier ses œuvres de toute association, d'hypocrisie et d'ostentation, en ne visant que le Visage d'Allah. Son contraire, l'ostentation (ar-riyâ') — agir pour être vu — est un shirk mineur et corrompt l'œuvre.",
+      "ref": "Leçons 2 (6ᵉ condition), 59 et 60, p. 16, 192 et 197"
+    },
+    {
+      "q": "Peut-on invoquer les morts ou les demander ?",
+      "mots": ["mort", "morts", "invoquer", "demander", "tombe", "saint", "intercession"],
+      "a": "Non. L'invocation est une adoration : elle ne s'adresse qu'à Allah. « Ceux que vous invoquez en dehors d'Allah sont des serviteurs comme vous. » (Al-A`râf, 194). On peut en revanche invoquer Allah EN FAVEUR des morts, leur demander pardon, et visiter les tombes pour se rappeler l'au-delà.",
+      "ref": "Leçons 38 et 70, p. 129 et 214"
+    },
+    {
+      "q": "Peut-on porter une amulette ou un porte-bonheur ?",
+      "mots": ["amulette", "porte-bonheur", "talisman", "mauvais œil", "grigri", "bracelet", "protection"],
+      "a": "Non. Le Prophète ﷺ a dit : « Les formules de conjuration, les amulettes et At-Tiwalah sont de l'association (shirk). » (Abû Dâwûd). La vraie protection, ce sont les invocations du matin et du soir, Âyat al-Kursî et les sourates protectrices.",
+      "ref": "Leçon 48, p. 158"
+    },
+    {
+      "q": "Peut-on jurer par autre qu'Allah ?",
+      "mots": ["jurer", "jure", "serment", "wallah", "tête de"],
+      "a": "Non. « Quiconque jure par autre qu'Allah a commis du shirk. » (At-Tirmidhî). On jure par Allah seul, ou bien on s'abstient de jurer.",
+      "ref": "Leçon 44, p. 144"
+    },
+    {
+      "q": "Qui connaît l'avenir et l'invisible ?",
+      "mots": ["invisible", "avenir", "futur", "connaît", "ghayb", "horoscope", "voyant", "devin", "astrologue"],
+      "a": "Allah Seul : « Dis : nul, dans les cieux et la terre, ne connaît l'Inconnaissable, à part Allah. » (An-Naml, 65). C'est pourquoi l'astrologie, la voyance et la consultation des devins sont interdites.",
+      "ref": "Leçons 45, 47 et 49, p. 146, 154 et 163"
+    },
+    {
+      "q": "Qu'est-ce que la confiance en Allah ?",
+      "mots": ["confiance", "tawakkul", "en remettre", "moyens", "oiseaux"],
+      "a": "S'en remettre à Allah tout en prenant les moyens qu'Il a permis. Le Prophète ﷺ a pris l'exemple des oiseaux : ils partent le matin le ventre vide et reviennent le soir le ventre plein. Le Tawakkul n'est donc pas rester sans rien faire.",
+      "ref": "Leçon 50, p. 169"
+    },
+    {
+      "q": "Qu'est-ce que l'innovation (bid'a) ?",
+      "mots": ["innovation", "bid'a", "bidah", "inventé", "nouveauté", "fête", "mariage"],
+      "a": "Toute croyance, parole ou acte introduit après le Prophète ﷺ dans le but d'adorer Allah. Le Prophète ﷺ a dit : « Quiconque invente dans notre religion quelque chose qui n'en fait pas partie, cela sera rejeté. » Il y a l'innovation majeure et l'innovation mineure.",
+      "ref": "Leçons 64 et 65, p. 205 et 206"
+    },
+    {
+      "q": "Qu'est-ce que l'hypocrisie ?",
+      "mots": ["hypocrisie", "hypocrite", "nifaq", "menteur", "promesse"],
+      "a": "Il y a deux sortes : l'hypocrisie de croyance, qui fait sortir de l'Islam, et l'hypocrisie des actes, qui n'en fait pas sortir. Le Prophète ﷺ a dit : « Les signes de l'hypocrite sont au nombre de trois : lorsqu'il parle il ment, lorsqu'il promet il manque à sa parole, et lorsqu'on lui confie quelque chose il trahit. »",
+      "ref": "Leçons 53 et 54, p. 184 et 186"
+    },
+    {
+      "q": "Qu'est-ce que l'adoration ?",
+      "mots": ["adoration", "adorer", "ibada", "culte", "rites"],
+      "a": "C'est un terme qui regroupe tout ce qu'Allah aime et agrée comme paroles et œuvres, apparentes et cachées : la prière bien sûr, mais aussi l'invocation, la confiance, la crainte, l'espoir, le sacrifice, et même une bonne parole ou un sourire fait pour Lui.",
+      "ref": "Leçons 57 et 58, p. 190 et 191"
+    },
+    {
+      "q": "Doit-on aimer le Prophète ﷺ plus que tout ?",
+      "mots": ["aimer", "prophète", "muhammad", "amour", "messager"],
+      "a": "Oui : c'est l'une des conditions de l'attestation « Muhammad Rasûl Allâh ». Le Prophète ﷺ a dit : « Aucun de vous ne sera pleinement croyant tant que je ne lui serai pas plus cher que son père, ses enfants et tous les gens. » (Al-Bukhârî et Muslim)",
+      "ref": "Leçon 5, p. 23"
+    },
+    {
+      "q": "Peut-on dessiner des êtres vivants ?",
+      "mots": ["dessiner", "dessin", "image", "photo", "animaux", "visage", "statue", "représenter"],
+      "a": "Il est interdit de représenter les êtres possédant une âme (humains, animaux) par le dessin ou la sculpture. « Les anges n'entrent pas dans une maison où se trouve un chien ou une image. » (Al-Bukhârî). C'est pourquoi cette application n'utilise que des motifs géométriques et végétaux — un art que les musulmans ont porté à la perfection.",
+      "ref": "Leçon 52, p. 183"
+    },
+    {
+      "q": "Qu'est-ce que le destin (qadar) ?",
+      "mots": ["destin", "qadar", "libre arbitre", "choix", "prédestination"],
+      "a": "Les gens de la Sunna tiennent une position médiane : l'être humain choisit véritablement ses actes, mais c'est Allah qui le crée, lui et ses actes. Ni contrainte totale (Jabriyya), ni création autonome des actes (Qadariyya).",
+      "ref": "Leçons 14, 75 et 76, p. 54, 227 et 229"
+    },
+    {
+      "q": "Peut-on traiter un musulman de mécréant ?",
+      "mots": ["mécréant", "takfir", "kafir", "juger", "péché"],
+      "a": "Non. Les gens de la Sunna ne taxent aucune personne de la qibla de mécréance à cause d'un péché : celui qui commet un péché reste musulman, mais sa foi diminue. C'est un fondement rappelé par Ibn Taymiyya, At-Tahâwî et Ibn Qudâma.",
+      "ref": "Leçon 74, p. 223"
+    },
+    {
+      "q": "Pourquoi tout le Coran est-il Tawhid ?",
+      "mots": ["coran", "tout", "sourates", "entier"],
+      "a": "Parce que le Coran est soit un appel à adorer Allah Seul, soit un ordre et une interdiction avec l'obéissance due, soit une annonce de la récompense des gens du Tawhid, soit le récit du sort réservé aux associateurs. Ibn Al-Qayyim a dit que toutes les sourates contiennent les deux types de Tawhid.",
+      "ref": "Leçon 27, p. 95"
+    },
+    {
+      "q": "Pourquoi apprendre le Tawhid ?",
+      "mots": ["apprendre", "pourquoi", "important", "science", "utile", "étudier"],
+      "a": "Parce que c'est la plus noble et la plus importante des sciences. Allah n'agrée les œuvres que de Celui qui L'unifie, les messagers ont tous commencé par le Tawhid, et le musulman doit connaître ce qui annule le Tawhid pour s'en écarter. Le Prophète ﷺ a passé treize ans à La Mecque à y appeler.",
+      "ref": "Conclusion, p. 234"
+    },
+    {
+      "q": "Quelles sont les sortes de peur ?",
+      "mots": ["peur", "crainte", "peur de", "khawf"],
+      "a": "Cinq : la peur-adoration (envers Allah Seul), la peur-association (craindre un autre dans l'invisible), la peur qui pousse à la désobéissance, la peur naturelle (face à un danger visible) et la peur illusoire.",
+      "ref": "Leçon 36, p. 118"
+    },
+    {
+      "q": "Quelles sont les sortes d'amour ?",
+      "mots": ["amour", "aimer", "mahabba", "quatre"],
+      "a": "Quatre : l'amour-adoration (envers Allah), l'amour-association (aimer un autre comme Allah ou plus), l'amour-désobéissance, et l'amour naturel (parents, enfants, nourriture) qui est parfaitement permis.",
+      "ref": "Leçon 37, p. 123"
+    },
+    {
+      "q": "Qu'est-ce que la Sunna ?",
+      "mots": ["sunna", "hadith", "tradition", "prophète"],
+      "a": "La Sunna comprend cinq parties : ce que le Prophète ﷺ a cru, ce qu'il a dit, ce qu'il a fait, ce qu'il a approuvé, et ce qu'il a délaissé. Suivre la Sunna, c'est le quatrième type de Tawhid : Tawhîd Al-Mutâba`ah.",
+      "ref": "Leçons 56 et 26, p. 188 et 83"
+    },
+    {
+      "q": "L'astrologie et la sorcellerie sont-elles interdites ?",
+      "mots": ["astrologie", "sorcellerie", "magie", "sihr", "sorcier", "magicien", "horoscope"],
+      "a": "Oui, les deux. « Quiconque apprend une branche de l'astrologie apprend une branche de la sorcellerie » (Abû Dâwûd), et la magie compte parmi les sept péchés destructeurs. Le shirk et la magie font d'ailleurs partie des actes qui annulent l'Islam.",
+      "ref": "Leçons 45 et 46, p. 146 et 149 ; leçon 11, p. 34"
+    }
+  ]
+}

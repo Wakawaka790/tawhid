@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tawhid — ressources du dépôt</title>
+<meta name="theme-color" content="#0f4c45">
+<style>
+  :root { --vert:#0f4c45; --or:#c9a227; --creme:#f7f2e7; --ligne:#e3dbcb; --gris:#6d7a77; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #1f2a28; background: var(--creme);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%230f4c45' stroke-opacity='.10' stroke-width='1'%3E%3Cpath d='M40 4 52 28 76 40 52 52 40 76 28 52 4 40 28 28Z'/%3E%3Cpath d='M40 22 48 32 58 40 48 48 40 58 32 48 22 40 32 32Z'/%3E%3C/g%3E%3C/svg%3E");
+    padding: 32px 20px;
+  }
+  .wrap { max-width: 760px; width: 100%; }
+  h1 { font-size: 27px; margin: 0 0 6px; color: var(--vert); }
+  p.sub { margin: 0 0 26px; color: var(--gris); }
+  .cards { display: grid; gap: 16px; }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: #fffdf7; border: 1px solid var(--ligne); border-left: 5px solid var(--vert);
+    border-radius: 14px; padding: 20px 22px; box-shadow: 0 2px 10px rgba(15,60,55,.08);
+    transition: .18s;
+  }
+  a.card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,60,55,.14); border-left-color: var(--or); }
+  a.card .ic { font-size: 26px; color: var(--vert); }
+  a.card h2 { margin: 6px 0 4px; font-size: 19px; color: var(--vert); }
+  a.card p { margin: 0; font-size: 14px; color: var(--gris); }
+  footer { margin-top: 26px; font-size: 12.5px; color: var(--gris); }
+  code { background: #efe9db; padding: 1px 6px; border-radius: 5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>❦ Ressources Tawhid</h1>
+  <p class="sub">Contenu extrait du livre <em>Leçons de Tawhid — Al-Qawl Al-Mufîd fî Adillat At-Tawhîd</em>.</p>
+  <div class="cards">
+    <a class="card" href="app-enfants/index.html">
+      <span class="ic">🌳</span>
+      <h2>Le Jardin du Tawhid — application pour les enfants</h2>
+      <p>4 modules interactifs : jardin de progression avec révision espacée, les 8 clés,
+         l'enquête « Détective du Tawhid », et le compagnon de questions sourcé sur le livre.</p>
+    </a>
+    <a class="card" href="carte-mentale/carte-mentale.html">
+      <span class="ic">✦</span>
+      <h2>Carte mentale de l'ouvrage</h2>
+      <p>76 leçons, 11 branches, 338 nœuds — version interactive (recherche, zoom, export SVG/PNG).</p>
+    </a>
+    <a class="card" href="carte-mentale/carte-mentale.md">
+      <span class="ic">☰</span>
+      <h2>Carte mentale — source Markdown</h2>
+      <p>Le même contenu au format texte, modifiable, qui sert de base à l'application.</p>
+    </a>
+    <a class="card" href="app-enfants/PROPOSITIONS.md">
+      <span class="ic">◈</span>
+      <h2>Conception de l'application enfants</h2>
+      <p>6 concepts détaillés, principes pédagogiques, contraintes religieuses, feuille de route.</p>
+    </a>
+  </div>
+  <footer>Dépôt <code>Wakawaka790/tawhid</code> · les données de progression de l'application restent
+    dans le navigateur, aucune donnée n'est envoyée.</footer>
+</div>
+</body>
+</html>

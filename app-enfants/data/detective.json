@@ -1,0 +1,132 @@
+{
+  "titre": "Détective du Tawhid",
+  "consigne": "Observe la scène. Pour chaque indice, choisis : Tawhid ✅ (adoration juste), Shirk ⛔ (association), Innovation ⚠️ (pratique inventée), Autorisé ○ (permis, sans lien avec l'adoration).",
+  "verdicts": {
+    "tawhid":  { "label": "Tawhid", "emoji": "✅", "couleur": "#047857" },
+    "shirk":   { "label": "Shirk", "emoji": "⛔", "couleur": "#be123c" },
+    "bidah":   { "label": "Innovation", "emoji": "⚠️", "couleur": "#a16207" },
+    "permis":  { "label": "Autorisé", "emoji": "○", "couleur": "#0369a1" }
+  },
+  "scenes": [
+    {
+      "id": "chambre",
+      "titre": "Dans la chambre",
+      "symbol": "◰",
+      "indices": [
+        { "t": "Un bracelet accroché au mur « contre le mauvais œil »", "v": "shirk",
+          "ex": "Leçon 48, p. 158 : les amulettes (at-tamâ'im) sont de l'association. La protection vient d'Allah par les invocations et le Coran." },
+        { "t": "Dire « Bismillâh » en entrant dans la pièce", "v": "tawhid",
+          "ex": "Invoquer Allah seul, en toute circonstance : c'est le cœur du Tawhîd Al-Ulûhiyya (leçon 24)." },
+        { "t": "Un tapis avec un motif géométrique", "v": "permis",
+          "ex": "L'art géométrique et végétal est permis ; seule la représentation des êtres animés est interdite (leçon 52, p. 183)." },
+        { "t": "Une peluche en forme d'animal sur le lit", "v": "permis",
+          "ex": "Les savants ont précisé que les jouets d'enfants ne sont pas concernés par l'interdiction — c'est le dessin et la sculpture d'êtres animés qui le sont (leçon 52). L'application, elle, n'utilise aucun visage." }
+      ]
+    },
+    {
+      "id": "cour",
+      "titre": "Dans la cour de récréation",
+      "symbol": "◳",
+      "indices": [
+        { "t": "« Je le jure sur la tête de mon père ! »", "v": "shirk",
+          "ex": "Leçon 44, p. 144 : « Quiconque jure par autre qu'Allah a commis du shirk. »" },
+        { "t": "« In shâ' Allâh, je viendrai demain »", "v": "tawhid",
+          "ex": "Rattacher l'avenir à la volonté d'Allah : c'est le Tawhîd Ar-Rubûbiyya appliqué (leçon 23)." },
+        { "t": "Un caillou dans la poche « pour ne pas rater le contrôle »", "v": "shirk",
+          "ex": "Croire qu'un objet porte chance dans l'invisible est du shirk (leçon 30, p. 100). Leçon 43 : la pierre noire elle-même ne peut rien." },
+        { "t": "Partager son goûter avec un camarade", "v": "tawhid",
+          "ex": "Toute action faite sincèrement pour Allah devient une adoration (leçon 57, p. 190)." }
+      ]
+    },
+    {
+      "id": "nuit",
+      "titre": "Le soir, avant de dormir",
+      "symbol": "☾",
+      "indices": [
+        { "t": "Avoir peur du noir", "v": "permis",
+          "ex": "Leçon 36, p. 118 : la peur naturelle est autorisée. Le shirk serait de craindre qu'un djinn ou un mort nous nuise dans l'invisible." },
+        { "t": "Réciter Âyat al-Kursî avant de dormir", "v": "tawhid",
+          "ex": "C'est la protection enseignée par le Prophète ﷺ — une cause permise, avec la confiance en Allah (leçon 50)." },
+        { "t": "Demandant à un mort de veiller sur la maison", "v": "shirk",
+          "ex": "Leçon 38, p. 129 : l'invocation est une adoration. « Ceux que vous invoquez en dehors d'Allah sont des serviteurs comme vous. » (Al-A`râf, 194)" },
+        { "t": "Souffler dans ses mains et réciter les 3 sourates protectrices", "v": "tawhid",
+          "ex": "La ruqya légiférée : paroles du Coran + confiance en Allah Seul (leçons 48 et 50)." }
+      ]
+    },
+    {
+      "id": "maladie",
+      "titre": "À l'hôpital",
+      "symbol": "✚",
+      "indices": [
+        { "t": "Consulter un médecin", "v": "permis",
+          "ex": "Leçon 50, p. 169 : prendre les moyens fait partie de la confiance en Allah. « Soignez-vous, serviteurs d'Allah. » (Abû Dâwûd)" },
+        { "t": "Croire que c'est le médecin qui guérit par lui-même", "v": "shirk",
+          "ex": "Allah Seul guérit ; le médecin n'est qu'une cause (leçon 23 : Tawhîd Ar-Rubûbiyya). « Et quand je suis malade, c'est Lui qui me guérit. » (Ash-Shu`arâ', 80)" },
+        { "t": "Aller voir un « guérisseur » qui invoque les djinns", "v": "shirk",
+          "ex": "Leçons 46-47, p. 149-154 : sorcellerie, voyance et invocation d'autres qu'Allah sont interdites." },
+        { "t": "Dire : « Ô Allah, guéris-moi, Tu es Celui qui guérit »", "v": "tawhid",
+          "ex": "Le Prophète ﷺ l'a enseigné : « Ô Seigneur des hommes, enlève le mal et guéris, Tu es Celui qui guérit, il n'est de guérison que la Tienne. » (Al-Bukhârî)" }
+      ]
+    },
+    {
+      "id": "fete",
+      "titre": "Le jour de la fête",
+      "symbol": "❋",
+      "indices": [
+        { "t": "Égorger un mouton pour l'Aïd, au nom d'Allah", "v": "tawhid",
+          "ex": "Leçon 42, p. 143 : c'est l'un des sacrifices légiférés. « Dis : en vérité, ma prière, mes actes de dévotion, ma vie et ma mort appartiennent à Allah. » (Al-An`âm, 162)" },
+        { "t": "Égorger un mouton « pour le saint du village »", "v": "shirk",
+          "ex": "Leçon 41, p. 139 : « Allah a maudit celui qui égorge pour autre qu'Allah. » (Muslim)" },
+        { "t": "Offrir un cadeau à son frère", "v": "permis",
+          "ex": "Acte permis et recommandé : avec l'intention de plaire à Allah, il devient une adoration (leçon 57)." },
+        { "t": "Célébrer une fête religieuse inventée, en la croyant prescrite par Allah", "v": "bidah",
+          "ex": "Leçon 64, p. 205 : toute pratique introduite dans la religion pour adorer Allah est une innovation rejetée." }
+      ]
+    },
+    {
+      "id": "cimetiere",
+      "titre": "Devant le cimetière",
+      "symbol": "⌂",
+      "indices": [
+        { "t": "Dire : « Que la paix soit sur vous, gens des tombes, qu'Allah vous pardonne »", "v": "tawhid",
+          "ex": "Leçon 70, p. 214 : c'est la visite légiférée — invoquer Allah POUR les morts, sans rien leur demander." },
+        { "t": "Demander au mort : « Exauce ma demande »", "v": "shirk",
+          "ex": "Leçon 38 : l'invocation est une adoration. « Et n'invoque pas, en dehors d'Allah, ce qui ne peut te profiter ni te nuire. » (Yûnus, 106)" },
+        { "t": "Construire un dôme sur la tombe", "v": "bidah",
+          "ex": "Leçon 68, p. 210 : interdiction de construire, plâtrer, et obligation de détruire ce qui a été bâti." },
+        { "t": "Traverser le cimetière à pied pour raccourcir le chemin", "v": "bidah",
+          "ex": "Leçon 71, p. 217 : interdit. Le Prophète ﷺ a dit qu'il vaut mieux s'asseoir sur une braise que sur une tombe." }
+      ]
+    },
+    {
+      "id": "ecole",
+      "titre": "À l'école",
+      "symbol": "✎",
+      "indices": [
+        { "t": "Lire son horoscope dans un magazine", "v": "shirk",
+          "ex": "Leçon 45, p. 146 : « Quiconque apprend une branche de l'astrologie apprend une branche de la sorcellerie. » (Abû Dâwûd)" },
+        { "t": "Apprendre une sourate par cœur", "v": "tawhid",
+          "ex": "La science du Tawhid est la plus noble des sciences (conclusion, p. 234)." },
+        { "t": "Se moquer d'un camarade parce qu'il prie", "v": "shirk",
+          "ex": "Leçon 34, p. 110 : se moquer de la religion est un acte grave. « Ne vous excusez pas : vous avez bel et bien rejeté la foi après avoir cru. » (At-Tawbah, 66)" },
+        { "t": "Aider un camarade à comprendre un exercice", "v": "tawhid",
+          "ex": "Leçon 73, p. 220 : transmettre un savoir est un appel à la voie d'Allah." }
+      ]
+    },
+    {
+      "id": "mosquee",
+      "titre": "À la mosquée",
+      "symbol": "❖",
+      "indices": [
+        { "t": "Prier deux unités en entrant (tahiyyat al-masjid)", "v": "tawhid",
+          "ex": "Acte légiféré : adorer Allah Seul, comme le Prophète ﷺ l'a enseigné (leçons 24 et 62)." },
+        { "t": "Prier en direction d'une tombe située dans la mosquée", "v": "bidah",
+          "ex": "Leçon 69, p. 213 : « Ne priez pas en direction des tombes et ne vous asseyez pas dessus. » (Muslim)" },
+        { "t": "Invoquer Allah après la prière, les mains levées", "v": "tawhid",
+          "ex": "Leçon 38 : l'invocation n'est adressée qu'à Allah." },
+        { "t": "Invoquer en groupe à voix haute, systématiquement, en croyant que c'est une sunna", "v": "bidah",
+          "ex": "Leçon 65, p. 206 : l'invocation collective instituée figure parmi les innovations majeures citées par le livre." }
+      ]
+    }
+  ]
+}
