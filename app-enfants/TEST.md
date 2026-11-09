@@ -11,21 +11,32 @@ Le serveur de prévisualisation tourne déjà. Ouvre simplement la racine du dé
 
 ## 2. Tester sur votre propre ordinateur
 
+Récupérez le code :
+
 ```bash
 git clone https://github.com/Wakawaka790/tawhid.git
 cd tawhid
 git checkout arena/00959781-tawhid     # ou la branche de votre choix
 cd app-enfants
-python3 -m http.server 8000
 ```
 
-Puis ouvrez **http://localhost:8000**.
-
-Autres possibilités, si Python n'est pas disponible :
+Puis **une seule commande**, qui démarre le serveur et affiche les adresses :
 
 ```bash
-npx serve .          # Node.js
-php -S localhost:8000
+./lancer.sh          # Linux / macOS
+lancer.bat           # Windows (double-clic)
+```
+
+Le script affiche `http://localhost:8000` **et** l'adresse à ouvrir depuis un
+téléphone branché au même Wi-Fi (pas besoin de chercher votre IP à la main).
+Sur Windows, si Python n'est pas installé, le script vous le dit.
+
+À défaut, manuellement :
+
+```bash
+python3 -m http.server 8000            # puis http://localhost:8000
+npx serve .                            # si vous avez Node.js
+php -S localhost:8000                  # si vous avez PHP
 ```
 
 ## 3. Tester sur téléphone (le plus réaliste)
