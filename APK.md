@@ -8,7 +8,7 @@ fonctionne **sans connexion** et sans serveur. C'est le gros avantage sur la PWA
 
 ---
 
-## Ce qu'il vous faut (une seule fois, ~30 min)
+## Ce qu'il vous faut (une seule fois)
 
 ### 1. Java JDK 17 — obligatoire pour compiler
 
@@ -24,11 +24,24 @@ java -version
 
 Vous devez voir `openjdk version "17…"`.
 
-### 2. Android Studio — pour le SDK et la compilation
+### 2. Le SDK Android — **le script s'en occupe**
 
-- Téléchargez : https://developer.android.com/studio
-- À l'installation, choisissez « Standard »
-- Au premier lancement, laissez-le télécharger le SDK Android (~3 Go)
+Vous n'avez **pas besoin d'Android Studio** : il pèse plus de 5 Go alors que
+seuls 700 Mo sont nécessaires pour fabriquer l'APK.
+
+Lancez simplement le script fourni, depuis la racine du dépôt :
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\installer-sdk-android.ps1
+```
+
+Il vous demandera une seule chose : télécharger les *Command line tools*
+depuis <https://developer.android.com/studio#command-line-tools-only>
+(~130 Mo), puis il installe le SDK dans `C:\Android` et crée le fichier
+`android\local.properties` tout seul.
+
+> **Si vous préférez Android Studio**, installez-le normalement : le script le
+> détectera et se contentera de configurer le projet.
 
 ### 3. Node.js — déjà installé chez vous (vous avez npm)
 
