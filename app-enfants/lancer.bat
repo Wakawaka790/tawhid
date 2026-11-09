@@ -1,8 +1,9 @@
 @echo off
-REM ═══════════════════════════════════════════════════════════
-REM   Lance « Le Jardin du Tawhid » en local.
-REM   Usage : double-clique sur lancer.bat  (Windows)
-REM ═══════════════════════════════════════════════════════════
+REM ==================================================================
+REM   Lance "Le Jardin du Tawhid" en local.
+REM   Windows : double-cliquez sur ce fichier.
+REM   Depuis PowerShell, ecrivez :  .\lancer.bat
+REM ==================================================================
 setlocal
 set PORT=8000
 cd /d "%~dp0"
@@ -13,10 +14,13 @@ if "%PY%"=="" where py >nul 2>nul && set PY=py
 
 if "%PY%"=="" (
   echo.
-  echo   Attention : Python est introuvable.
-  echo   Installe-le depuis https://www.python.org
-  echo   ^(coche "Add Python to PATH" pendant l'installation^)
-  echo   ou lance :  npx serve .
+  echo   ATTENTION : Python est introuvable.
+  echo.
+  echo   1. Installez-le depuis https://www.python.org
+  echo      ^(cochez "Add Python to PATH" pendant l'installation^)
+  echo   2. Puis relancez ce fichier.
+  echo.
+  echo   Alternative si vous avez Node.js :  npx serve .
   echo.
   pause
   exit /b 1
@@ -25,6 +29,7 @@ if "%PY%"=="" (
 echo.
 echo   Le Jardin du Tawhid
 echo   -------------------------------------------------
+echo.
 echo   Sur cet ordinateur :
 echo      http://localhost:%PORT%
 echo.
@@ -35,8 +40,8 @@ for /f "tokens=2 delims=:" %%a in ('ipconfig ^| findstr /c:"IPv4"') do (
 )
 
 echo.
-echo   Astuce : ouvre le lien puis "Installer l'application".
-echo   Ctrl+C pour arreter.
+echo   Ouvrez ce lien, puis "Installer l'application".
+echo   Laissez cette fenetre ouverte. Ctrl+C pour arreter.
 echo   -------------------------------------------------
 echo.
 

@@ -11,7 +11,7 @@ Le serveur de prévisualisation tourne déjà. Ouvre simplement la racine du dé
 
 ## 2. Tester sur votre propre ordinateur
 
-Récupérez le code :
+Récupérez le code (une ligne à la fois) :
 
 ```bash
 git clone https://github.com/Wakawaka790/tawhid.git
@@ -20,24 +20,48 @@ git checkout arena/00959781-tawhid     # ou la branche de votre choix
 cd app-enfants
 ```
 
-Puis **une seule commande**, qui démarre le serveur et affiche les adresses :
+Puis lancez le serveur :
 
 ```bash
 ./lancer.sh          # Linux / macOS
-lancer.bat           # Windows (double-clic)
+.\lancer.bat         # Windows, dans PowerShell
+                     # (ou double-clic depuis l'Explorateur)
 ```
 
 Le script affiche `http://localhost:8000` **et** l'adresse à ouvrir depuis un
 téléphone branché au même Wi-Fi (pas besoin de chercher votre IP à la main).
 Sur Windows, si Python n'est pas installé, le script vous le dit.
 
-À défaut, manuellement :
+### ⚠️ Sur Windows / PowerShell — les 3 pièges
 
-```bash
-python3 -m http.server 8000            # puis http://localhost:8000
-npx serve .                            # si vous avez Node.js
-php -S localhost:8000                  # si vous avez PHP
+| Piège | Mauvaise commande | Bonne commande |
+|---|---|---|
+| `&&` n'existe pas dans PowerShell 5.1 | `cd tawhid && git checkout …` | `cd tawhid` **puis Entrée**, `git checkout …` |
+| Le slash est inversé | `./lancer.bat` | `.\lancer.bat` (antislash) |
+| Il faut être **dans** le dossier | `lancer.bat` depuis `C:\Users\...` | `cd app-enfants` d'abord |
+
+La suite complète, à coller ligne par ligne dans PowerShell :
+
+```powershell
+cd tawhid
+git checkout arena/00959781-tawhid
+cd app-enfants
+.\lancer.bat
 ```
+
+### Sans script, en une ligne
+
+```powershell
+python -m http.server 8000             # puis http://localhost:8000
+```
+
+Pour connaître l'adresse à taper sur le téléphone :
+
+```powershell
+ipconfig | findstr IPv4
+```
+
+À défaut de Python : `npx serve .` (Node.js) ou `php -S localhost:8000` (PHP).
 
 ## 3. Tester sur téléphone (le plus réaliste)
 
