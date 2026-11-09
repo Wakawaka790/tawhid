@@ -506,6 +506,25 @@ function init() {
     }
   });
 
+  /* Outils de test : avancer le temps pour déclencher les révisions */
+  const avancerTemps = (jours) => {
+    Object.keys(ETAT.lecons).forEach((n) => {
+      const p = ETAT.lecons[n];
+      if (p && p.next) p.next -= jours * JOUR;
+    });
+    sauver(); rendreTout();
+    const { aReviser } = stats();
+    toast(aReviser ? `+${jours} jour(s) — ${aReviser} leçon(s) à réviser` : `+${jours} jour(s) — rien à réviser`);
+  };
+  $('#btn-jour1').addEventListener('click', () => avancerTemps(1));
+  $('#btn-jour7').addEventListener('click', () => avancerTemps(7));
+  $('#btn-demo').addEventListener('click', () => {
+    DATA.lecons.slice(0, 12).forEach((l, i) => {
+      if (!ETAT.lecons[l.n]) ETAT.lecons[l.n] = { box: i % 4, next: Date.now() + (i % 3) * JOUR };
+    });
+    sauver(); rendreTout(); toast('12 leçons pré-remplies — recharge pour voir les feuilles jaunes');
+  });
+
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(() => { /* pas bloquant */ });
   }
