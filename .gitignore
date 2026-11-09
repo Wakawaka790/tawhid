@@ -1,0 +1,6 @@
+# Environnements et dépendances
+.venv/
+node_modules/
+
+# Dossiers de travail (OCR, scripts de build)
+.work/
