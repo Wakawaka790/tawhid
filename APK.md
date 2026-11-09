@@ -10,10 +10,13 @@ fonctionne **sans connexion** et sans serveur. C'est le gros avantage sur la PWA
 
 ## Ce qu'il vous faut (une seule fois)
 
-### 1. Java JDK 17 — obligatoire pour compiler
+### 1. Java **JDK 21** — obligatoire pour compiler
 
-- Téléchargez **JDK 17** (Temurin / Eclipse Adoptium) : https://adoptium.net
-- Prenez « JDK 17 (LTS) », Windows x64, `.msi`
+Capacitor 8 compile en Java 21. Un Java 17 fait échouer le build avec
+`error: invalid source release: 21`.
+
+- Téléchargez **JDK 21** (Temurin / Eclipse Adoptium) : https://adoptium.net
+- Prenez « JDK 21 (LTS) », Windows x64, `.msi`
 - Installez en laissant les options par défaut
 
 Vérifiez dans PowerShell :
@@ -22,7 +25,11 @@ Vérifiez dans PowerShell :
 java -version
 ```
 
-Vous devez voir `openjdk version "17…"`.
+Vous devez voir `openjdk version "21…"`.
+
+> Les JDK cohabitent sans problème : inutile de désinstaller une version
+> plus ancienne. Le script repère le JDK 21 et l'indique nommément à
+> Gradle, quel que soit l'ordre de votre `PATH`.
 
 ### 2. Le SDK Android — **le script s'en occupe**
 
@@ -35,13 +42,21 @@ Lancez simplement le script fourni, depuis la racine du dépôt :
 powershell -ExecutionPolicy Bypass -File .\installer-sdk-android.ps1
 ```
 
-Il vous demandera une seule chose : télécharger les *Command line tools*
-depuis <https://developer.android.com/studio#command-line-tools-only>
-(~130 Mo), puis il installe le SDK dans `C:\Android` et crée le fichier
-`android\local.properties` tout seul.
+Il fait trois choses, et ne s'arrête que si une pièce manque :
+
+1. cherche un **JDK 21** (Adoptium, Microsoft, Corretto, Zulu…) et l'indique
+   à Gradle dans `C:\Users\Win10\.gradle\gradle.properties` ;
+2. installe le **SDK** — il vous demandera de télécharger les *Command line
+   tools* depuis <https://developer.android.com/studio#command-line-tools-only>
+   (~130 Mo), puis installe le tout dans `C:\Android` ;
+3. crée `android\local.properties`.
 
 > **Si vous préférez Android Studio**, installez-le normalement : le script le
 > détectera et se contentera de configurer le projet.
+
+À noter : ces deux fichiers de configuration sont **hors du dépôt** (l'un est
+ignoré par Git, l'autre est dans votre dossier personnel), donc un `git pull`
+ne les écrasera jamais.
 
 ### 3. Node.js — déjà installé chez vous (vous avez npm)
 
