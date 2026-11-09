@@ -15,9 +15,11 @@ fonctionne **sans connexion** et sans serveur. C'est le gros avantage sur la PWA
 Capacitor 8 compile en Java 21. Un Java 17 fait échouer le build avec
 `error: invalid source release: 21`.
 
-- Téléchargez **JDK 21** (Temurin / Eclipse Adoptium) : https://adoptium.net
-- Prenez « JDK 21 (LTS) », Windows x64, `.msi`
-- Installez en laissant les options par défaut
+**Téléchargement direct** (Temurin 21.0.13, Windows 64 bits, 171 Mo) :
+
+<https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_x64_windows_hotspot_21.0.13_9.msi>
+
+Ouvrez le `.msi` et laissez les options par défaut.
 
 Vérifiez dans PowerShell :
 
