@@ -20,6 +20,22 @@ function Dire($msg) {
 function Ok($msg)   { Write-Host "    OK  $msg" -ForegroundColor Green }
 function Info($msg) { Write-Host "    ->  $msg" -ForegroundColor Yellow }
 
+# Les outils Java (java, sdkmanager) ecrivent leurs messages sur le canal
+# d'erreur. Avec $ErrorActionPreference = "Stop", PowerShell 5.1 prend cela
+# pour un echec et interrompt le script. On baisse donc la garde le temps
+# de les appeler.
+function Lancer-Natif {
+    param([string]$Exe, [string[]]$Params)
+
+    $ancien = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    & $Exe @Params
+    $code = $LASTEXITCODE
+    $ErrorActionPreference = $ancien
+
+    return $code
+}
+
 # ---------------------------------------------------------------------
 # 0. Verifications preliminaires
 # ---------------------------------------------------------------------
@@ -32,7 +48,13 @@ if (-not $java) {
     Read-Host "Appuyez sur Entree pour quitter"
     exit 1
 }
-$versionJava = (java -version 2>&1) | Select-Object -First 1
+
+$ancien = $ErrorActionPreference
+$ErrorActionPreference = 'Continue'
+$sortie = java -version 2>&1
+$ErrorActionPreference = $ancien
+
+$versionJava = ($sortie | Out-String).Trim() -split "`n" | Select-Object -First 1
 Ok "Java detecte : $versionJava"
 
 # ---------------------------------------------------------------------
@@ -102,14 +124,14 @@ if ($candidats) {
     Dire "Acceptation des licences Google"
     Write-Host "    Tapez y puis Entree autant de fois que demande." -ForegroundColor Yellow
     Write-Host ""
-    & $sdkmanager --licenses
+    Lancer-Natif $sdkmanager @("--licenses") | Out-Null
 
     Dire "Telechargement du SDK (platformes + outils de compilation)"
     Info "Environ 700 Mo. Cela peut prendre plusieurs minutes."
-    & $sdkmanager --install "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+    $code = Lancer-Natif $sdkmanager @("--install", "platform-tools", "platforms;android-36", "build-tools;36.0.0")
 
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "    Le telechargement a echoue (code $LASTEXITCODE)." -ForegroundColor Red
+    if ($code -ne 0) {
+        Write-Host "    Le telechargement a echoue (code $code)." -ForegroundColor Red
         Read-Host "Appuyez sur Entree pour quitter"
         exit 1
     }
