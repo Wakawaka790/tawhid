@@ -1,9 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <!-- Palette de l'application : vert profond + or, sans aucune représentation
-         d'être animé, conformément à la leçon 52 du livre. -->
+    <!-- Palette de l'application : vert profond + or.
+         Aucune representation d'etre anime, conformement a la lecon 52
+         du livre.
+
+         Attention : la couleur de fond de l'icone adaptative
+         (ic_launcher_background) ne doit PAS etre declaree ici. Elle vit
+         dans res/values/ic_launcher_background.xml, fourni par le modele
+         Capacitor. La declarer deux fois fait echouer la fusion des
+         ressources avec "Duplicate resources". -->
     <color name="colorPrimary">#0F4C45</color>
     <color name="colorPrimaryDark">#09302B</color>
     <color name="colorAccent">#C9A227</color>
-    <color name="ic_launcher_background">#0F4C45</color>
 </resources>

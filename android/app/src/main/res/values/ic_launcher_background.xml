@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ic_launcher_background">#FFFFFF</color>
+    <!-- Fond de l'icone adaptative (Android 8 et plus), reference par
+         res/mipmap-anydpi-v26/ic_launcher.xml. Vert profond de la marque
+         au lieu du blanc du modele Capacitor. -->
+    <color name="ic_launcher_background">#0F4C45</color>
 </resources>
