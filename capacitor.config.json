@@ -1,0 +1,7 @@
+{
+  "appId": "com.tawhid.jardin",
+  "appName": "Le Jardin du Tawhid",
+  "webDir": "app-enfants",
+  "androidScheme": "https",
+  "loggingEnabled": false
+}

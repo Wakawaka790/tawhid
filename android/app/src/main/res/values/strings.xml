@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Le Jardin du Tawhid</string>
+    <string name="title_activity_main">Le Jardin du Tawhid</string>
+    <string name="package_name">com.tawhid.jardin</string>
+    <string name="custom_url_scheme">com.tawhid.jardin</string>
+</resources>

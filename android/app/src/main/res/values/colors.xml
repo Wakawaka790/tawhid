@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <!-- Palette de l'application : vert profond + or, sans aucune représentation
+         d'être animé, conformément à la leçon 52 du livre. -->
+    <color name="colorPrimary">#0F4C45</color>
+    <color name="colorPrimaryDark">#09302B</color>
+    <color name="colorAccent">#C9A227</color>
+    <color name="ic_launcher_background">#0F4C45</color>
+</resources>

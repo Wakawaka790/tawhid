@@ -1,0 +1,19 @@
+{
+  "name": "jardin-du-tawhid",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Le Jardin du Tawhid — application interactive pour apprendre le Tawhid aux enfants",
+  "scripts": {
+    "copy": "cap copy android",
+    "sync": "cap sync android",
+    "open": "cap open android",
+    "android": "cap sync android && cap open android"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/cli": "^8.0.0"
+  },
+  "dependencies": {
+    "@capacitor/core": "^8.0.0"
+  }
+}
