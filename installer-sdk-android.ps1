@@ -31,7 +31,9 @@ function Lancer-Natif {
 
     $ancien = $ErrorActionPreference
     $ErrorActionPreference = 'Continue'
-    & $Exe @Params
+    # "Out-Host" est indispensable : sans lui, la sortie de la commande
+    # remonte dans le pipeline et se melange a la valeur de retour.
+    & $Exe @Params 2>&1 | Out-Host
     $code = $LASTEXITCODE
     $ErrorActionPreference = $ancien
 

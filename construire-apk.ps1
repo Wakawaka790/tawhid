@@ -40,7 +40,10 @@ function Lancer-Natif {
     param([string]$Exe, [string[]]$Params)
     $ancien = $ErrorActionPreference
     $ErrorActionPreference = 'Continue'
-    & $Exe @Params
+    # "Out-Host" est indispensable : sans lui, la sortie de la commande
+    # remonte dans le pipeline et se melange a la valeur de retour, si
+    # bien que $code contient le texte affiche au lieu du code d'erreur.
+    & $Exe @Params 2>&1 | Out-Host
     $code = $LASTEXITCODE
     $ErrorActionPreference = $ancien
     return $code
@@ -295,9 +298,19 @@ Info "Ne fermez pas cette fenetre."
 Write-Host ""
 
 $gradlew = Join-Path $Projet "gradlew.bat"
+$debut = Get-Date
 Push-Location $Projet
 $code = Lancer-Natif $gradlew @("assembleDebug")
 Pop-Location
+
+# Filet de securite : si le code de retour est inattendu mais que l'APK
+# vient tout juste d'etre produit, on fait confiance au fichier.
+if ($code -ne 0 -and (Test-Path $APK)) {
+    if ((Get-Item $APK).LastWriteTime -gt $debut) {
+        Echec "Code de retour inattendu ($code), mais l'APK vient d'etre produit."
+        $code = 0
+    }
+}
 
 if ($code -ne 0) {
     Write-Host ""
